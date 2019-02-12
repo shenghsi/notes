@@ -1,6 +1,8 @@
-Split windows
-:on[ly][!] close all other windows except current one
+**Split windows**
+Command    | Description
+:on[ly][!] | close all other windows except current one
 
-Copy multilines. Copy 5 lines:
-5yy
+**Copy**
+Command    | Description
+5yy         |copy 5 lines
 
