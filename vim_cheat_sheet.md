@@ -1,8 +1,8 @@
-###Split windows
+### Split windows
 
-:on[ly][!] | close all other windows except current one
+:on[ly][!]  close all other windows except current one
 
-###Copy
+### Copy
 
-5yy         |copy 5 lines
+5yy         copy 5 lines
 
