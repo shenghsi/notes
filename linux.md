@@ -8,7 +8,7 @@ should do the same thing more quickly
 ```bash
 du -sh */     #Show directory sizes
 ```
-### Network
+## Network
 ```bash
 dig     #DNS lookup
 netstat #The netstat command symbolically displays the contents of various network-related data structures.
