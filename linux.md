@@ -10,9 +10,9 @@ du -sh */     #Show directory sizes
 ```
 ## Network
 ```bash
-dig                   #DNS lookup
+dig             #DNS lookup
 dig (domain information groper) is a flexible tool for interrogating DNS name servers. It performs DNS lookups and displays the answers that are returned from the name server(s) that were queried.
 
-netstat               #show network status
+netstat         #show network status
 The netstat command symbolically displays the contents of various network-related data structures.
 ```
