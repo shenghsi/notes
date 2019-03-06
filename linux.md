@@ -6,3 +6,6 @@ should do the same thing more quickly
 
 **Show directory sizes**
 du -sh */
+
+**DNS lookup**
+dig
