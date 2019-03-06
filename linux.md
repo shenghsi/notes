@@ -11,4 +11,5 @@ du -sh */     #Show directory sizes
 ### Network
 ```bash
 dig     #DNS lookup
+netstat #The netstat command symbolically displays the contents of various network-related data structures.
 ```
