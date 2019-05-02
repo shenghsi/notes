@@ -8,7 +8,7 @@ should do the same thing more quickly
 ```bash
 du -sh */     #Show directory sizes
 ```
-## Network
+#### Network
 ```bash
 dig             #DNS lookup
 dig (domain information groper) is a flexible tool for interrogating DNS name servers. It performs DNS lookups and displays the answers that are returned from the name server(s) that were queried.
