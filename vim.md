@@ -15,6 +15,8 @@ set wildmenu
 ### vim examples in normal mode
 ```
 .       # repeat last command
+`.      # jump to last change
+``      # bring you back to where the cursor was before you made your last jump
 diw     # delete in word
 caw     # change all word
 yi)     # yank all inside parentheses
