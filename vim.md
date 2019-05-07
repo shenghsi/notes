@@ -17,6 +17,7 @@ set wildmenu
 .       # repeat last command
 `.      # jump to last change
 ``      # bring you back to where the cursor was before you made your last jump
+`^      # jump to the position where the cursor was the last time when insert mode was stopped
 diw     # delete in word
 caw     # change all word
 yi)     # yank all inside parentheses
