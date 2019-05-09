@@ -28,7 +28,7 @@ df)     # delete until ), including )
 {       # [count] paragraphs backward.  exclusive motion.
 }       # [count] paragraphs forward.  exclusive motion.
 
-[m      # cursor N times back to start of member
+[m      # cursor N times back to start of member function
 ]]      # [count] sections forward or to the next '{' in the first column.  When used after an operator, then also stops below a '}' in the first column.  exclusive Note that exclusive-linewise often applies.
 ][      # [count] sections forward or to the next '}' in the first column.  exclusive Note that exclusive-linewise often applies.
 [[      # [count] sections backward or to the previous '{' in the first column.  exclusive Note that exclusive-linewise often applies.
