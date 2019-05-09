@@ -31,6 +31,10 @@ df)     # delete until ), including )
 ][      # [count] sections forward or to the next '}' in the first column.  exclusive Note that exclusive-linewise often applies.
 [[      # [count] sections backward or to the previous '{' in the first column.  exclusive Note that exclusive-linewise often applies.
 []      # [count] sections backward or to the previous '}' in the first column.  exclusive Note that exclusive-linewise often applies.
+[(      # go to [count] previous unmatched '('. exclusive motion. {not in Vi} 
+[{      # go to [count] previous unmatched '{'. exclusive motion. {not in Vi} 
+])      # go to [count] next unmatched ')'. exclusive motion. {not in Vi} 
+]}      # go to [count] next unmatched '}'. exclusive motion. {not in Vi} 
 
 :earlier 2m     # goto 2min ago
 
