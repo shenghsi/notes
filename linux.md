@@ -23,6 +23,9 @@ alias QS='echo $PWD'
 Double quotes are evaluated at time of creation and, thereafter, never changes:
 alias QD="echo $PWD"
 
+# Symbolic link
+ln -s source_file myfile    #Replace source_file with the name of the existing file for which you want to create the symbolic link (this file can be any existing file or directory across the file systems). Replace myfile with the name of the symbolic link.
+
 ```
 #### Network
 ```bash
