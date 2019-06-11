@@ -90,3 +90,11 @@ After an opening [, everything until the next closing ] specifies a /collection.
 \0 inserts the text matched by the entire pattern
 \1 inserts the text of the first backreference. \2 inserts the second backreference, and so on.
 ```
+
+### netrw
+```
+Invoking netrw can be achieved in three ways
+:Explore - opens netrw in the current window
+:Sexplore - opens netrw in a horizontal split
+:Vexplore - opens netrw in a vertical split
+```
