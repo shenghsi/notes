@@ -11,6 +11,10 @@ Simply select the number you wish to explore more about and it’ll take you the
 Hit Ctrl+t  to jump back.
 While still in insert mode, hit Ctrl+x Ctrl+] . You should get a list like shown in the screenshot below.
 
+Include another ctags file generated separately in another path
+:set tags+=/path/to/other/dir/tags
+
+
 cscope -R
 To include symlinks
 find `pwd` -name "*.[ch]" -o -name "*.cpp" -o -name "*.hxx" -exec realpath {} \; > cscope.files
