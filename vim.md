@@ -70,8 +70,15 @@ Play a macro
 Aplly macro in visual mode
 :normal @{register}
 ```
-
-### When searching:
+### Search/Replace
+```
+:.,.+10s/foo/bar/g    # . for the current position, and .+10 for 10 lines down
+%       # for the whole file.
+'<,'>   # for the lines of visually selected block. This might get you more than you want of the visual selection starts or ends in the middle of a line. The whole line is included.
+'a,'b   # from mark a to mark b.
+.,$     # from the current line to the end of the file.
+```
+#### When searching:
 ```
 ., *, \, [, ^, and $ are metacharacters.
 +, ?, |, &, {, (, and ) must be escaped to use their special function.
@@ -83,7 +90,7 @@ After an opening [, everything until the next closing ] specifies a /collection.
 \(foo\) makes a backreference to foo. Parenthesis without escapes are literally matched. Here the \ is required for the closing \).
 ```
 
-### When replacing:
+#### When replacing:
 ```
 \r is newline, \n is a null byte (0x00).
 \& is ampersand (& is the text that matches the search pattern).
