@@ -107,5 +107,9 @@ Invoking netrw can be achieved in three ways
 ```
 ### omni completion
 ```
-type <C-X><C-O> while open in Insert mode. If matching names are found, a pop-up menu opens which can be navigated using the <C-N> and <C-P> keys.
+Omni completion is not usually enabled by default. To turn on omni completion, add the following to your vimrc:
+filetype plugin on
+set omnifunc=syntaxcomplete#Complete
+<C-X><C-O>        # while open in Insert mode. If matching names are found, a pop-up menu opens 
+<C-N> and <C-P>   # navigating matching names
 ```
