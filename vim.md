@@ -113,3 +113,8 @@ set omnifunc=syntaxcomplete#Complete
 <C-X><C-O>        # while open in Insert mode. If matching names are found, a pop-up menu opens 
 <C-N> and <C-P>   # navigating matching names
 ```
+### colorschemes
+```
+To see how different color schemes look, try (see view all colors):
+:runtime syntax/colortest.vim
+```
