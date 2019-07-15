@@ -105,3 +105,7 @@ Invoking netrw can be achieved in three ways
 :Sexplore - opens netrw in a horizontal split
 :Vexplore - opens netrw in a vertical split
 ```
+### omni completion
+```
+type <C-X><C-O> while open in Insert mode. If matching names are found, a pop-up menu opens which can be navigated using the <C-N> and <C-P> keys.
+```
