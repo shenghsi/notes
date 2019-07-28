@@ -9,7 +9,7 @@ e.g.
 ```
 http://latex.codecogs.com/svg.latex?E%3Dmc%5E2
 ```
-3. Add it as a picture in markdown like 
+4. Add it as a picture in markdown like 
 ```
 ![img](http://latex.codecogs.com/svg.latex?E%3Dmc%5E2)
 ```
