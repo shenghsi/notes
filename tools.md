@@ -24,4 +24,18 @@ To include symlinks
 find `pwd` -name "*.[ch]" -o -name "*.cpp" -o -name "*.hxx" -exec realpath {} \; > cscope.files
 In the directory with 'cscope.files'
 cscope -b -q -k
+
+error:
+cs_read_prompt EOF: No such file or directory
+E609: Cscope error: cscope: invlib.c:570: invopen: Assertion `invcntl-aram.sizeblk == sizeof(t_logicalblk)' failed.
+
+solution:
+
+Use the correct version 32 bit vs 64 bit
+file /usr/bin/cscope
+/usr/bin/cscope: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), dynamically linked (uses shared libs), for GNU/Linux 2.6.32, BuildID[sha1]=401ebb04096233e591deed0162255b9b50efb017, stripped
+
+file /usr/local/packages/cscope/bin/cscope
+/usr/local/packages/cscope/bin/cscope: ELF 32-bit LSB executable, Intel 80386, version 1 (SYSV), dynamically linked (uses shared libs), for GNU/Linux 2.2.5, not stripped
+
 ```
