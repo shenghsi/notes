@@ -35,3 +35,10 @@ dig             #DNS lookup. dig (domain information groper) is a flexible tool 
 
 netstat         #show network status. The netstat command symbolically displays the contents of various network-related data structures.
 ```
+#### VNC
+```
+Problem: unable to copy to vnc server
+Solution: kill the klipper process
+
+uncheck pass special keys directly to VNC server to use CMD+Tab to switch between local windows
+```
