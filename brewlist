@@ -1,0 +1,16 @@
+adwaita-icon-theme		gdb				libcroco			meson				qrencode
+argon2				gdbm				libepoxy			ninja				qt
+atk				gdk-pixbuf			libffi				node				quazip
+autoconf			gettext				libgcrypt			nspr				readline
+automake			girara				libgpg-error			nss				sphinx-doc
+bash				glib				libidn2				openjpeg			sqlite
+cairo				gnu-sed				libmagic			openssl				ta-lib
+cmake				graphite2			libnotify			openssl@1.1			universal-ctags
+ctags				gsettings-desktop-schemas	libpng				pango				valgrind
+desktop-file-utils		gtk+3				librsvg				pcre				vifm
+djvulibre			harfbuzz			libsodium			pdfgrep				wget
+docutils			hicolor-icon-theme		libtiff				pixman				xz
+fontconfig			icu4c				libunistring			pkg-config			ykpers
+freetype			intltool			libyubikey			poppler				zathura
+fribidi				jpeg				little-cms2			python				zathura-djvu
+fzf				json-c				lzo				python@3.8			zathura-pdf-poppler
