@@ -1,0 +1,2 @@
+brew cask list
+basictex                      chromedriver                  iterm2                        keepassxc                     miniconda                     xquartz
