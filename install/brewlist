@@ -1,16 +1,19 @@
-adwaita-icon-theme		gdb				libcroco			meson				qrencode
-argon2				gdbm				libepoxy			ninja				qt
-atk				gdk-pixbuf			libffi				node				quazip
-autoconf			gettext				libgcrypt			nspr				readline
-automake			girara				libgpg-error			nss				sphinx-doc
-bash				glib				libidn2				openjpeg			sqlite
-cairo				gnu-sed				libmagic			openssl				ta-lib
-cmake				graphite2			libnotify			openssl@1.1			universal-ctags
-ctags				gsettings-desktop-schemas	libpng				pango				valgrind
-desktop-file-utils		gtk+3				librsvg				pcre				vifm
-djvulibre			harfbuzz			libsodium			pdfgrep				wget
-docutils			hicolor-icon-theme		libtiff				pixman				xz
-fontconfig			icu4c				libunistring			pkg-config			ykpers
-freetype			intltool			libyubikey			poppler				zathura
-fribidi				jpeg				little-cms2			python				zathura-djvu
-fzf				json-c				lzo				python@3.8			zathura-pdf-poppler
+adwaita-icon-theme		gdbm				libepoxy			ninja				quazip
+argon2				gdk-pixbuf			libffi				node				r
+atk				geckodriver			libgcrypt			nspr				readline
+autoconf			gettext				libgpg-error			nss				sphinx-doc
+automake			girara				libidn2				openblas			sqlite
+bash				glib				libmagic			openjpeg			ta-lib
+broot				gmp				libmpc				openssl				tree
+cairo				gnu-sed				libnotify			openssl@1.1			universal-ctags
+cmake				graphite2			libpng				pango				valgrind
+ctags				gsettings-desktop-schemas	librsvg				pcre				vifm
+desktop-file-utils		gtk+3				libsodium			pcre2				wget
+djvulibre			harfbuzz			libtiff				pdfgrep				xz
+docutils			hicolor-icon-theme		libunistring			pixman				ykpers
+fontconfig			icu4c				libyubikey			pkg-config			zathura
+freetype			intltool			little-cms2			poppler				zathura-djvu
+fribidi				isl				lzo				python				zathura-pdf-poppler
+fzf				jpeg				meson				python@3.8
+gcc				json-c				mpfr				qrencode
+gdb				libcroco			mysql-client			qt
