@@ -42,3 +42,8 @@ Solution: kill the klipper process
 
 uncheck pass special keys directly to VNC server to use CMD+Tab to switch between local windows
 ```
+
+#### Meta key
+<https://www.emacswiki.org/emacs/MetaKeyProblems>
+
+Esc = Meta on Mac
