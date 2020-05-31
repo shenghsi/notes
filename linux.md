@@ -24,9 +24,44 @@ Double quotes are evaluated at time of creation and, thereafter, never changes:
 alias QD="echo $PWD"
 
 --            # double dash "--" means "end of command line flags" i.e. it tells the preceding command not to try to parse what comes after command line options.
+```
+##### csh
+```
+!! Repeats the previous command
+!10 Repeat the 10th command from the history
+!-2 Repeat the 2nd command (from the last) from the history
+!string Repeat the command that starts with “string” from the history
+!?string Repeat the command that contains the word “string” from the history
+^str1^str2^ Substitute str1 in the previous command with str2 and execute it
+!!:$ Gets the last argument from the previous command.
+!string:n Gets the nth argument from the command that starts with “string” from the history.
 
-# Symbolic link
+!^ first argument of the previous command
+
+!$ last argument of the previous command
+!\* all arguments of the previous command
+!:2 second argument of the previous command
+!:2-3 second to third arguments of the previous command
+!:2-$ second to last arguments of the previous command
+!:2\* second to last arguments of the previous command
+!:2- second to next to last arguments of the previous command
+!:0 the command itself
+```
+
+#### Symbolic link
 ln -s source_file myfile    #Replace source_file with the name of the existing file for which you want to create the symbolic link (this file can be any existing file or directory across the file systems). Replace myfile with the name of the symbolic link.
+
+#### SSH
+ssh using public and private keys
+<https://missing.csail.mit.edu/2020/command-line/>
+ssh-add -l lists all currently held keys
+ssh-add -D forces ssh-agent to forget all currently held keys
+ssh-add ~/.ssh/newkey_rsa adds the private key ~/.ssh/newkey_rsa to ssh-agent.
+ssh-add -t 3600 ~/.ssh/newkey_rsa adds a new private key with an expiry time, so ssh-agent will only remember newkey_rsa for (say) 3600 seconds.
+
+show ciphers
+ssh -Q cipher localhost | paste -d , -s -
+ssh -YC -c aes128-gcm@openssh.com shxi@slc11cbg
 
 ```
 #### Network
@@ -38,7 +73,7 @@ netstat         #show network status. The netstat command symbolically displays 
 #### VNC
 ```
 Problem: unable to copy to vnc server
-Solution: kill the klipper process
+Solution: kill the klipper process. May need run vncconfig&
 
 uncheck pass special keys directly to VNC server to use CMD+Tab to switch between local windows
 ```

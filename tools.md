@@ -1,3 +1,8 @@
+### fzf
+C-r (search command history)
+C-t (search file)
+cd \*\*\<tab\> (find dir to cd)
+
 ### doxygen
 generate documents from source code
 
