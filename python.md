@@ -18,3 +18,12 @@ source venv/bin/activate
 pip list
 pip list --local
 ```
+
+### matplotlib
+```python
+plt.xkcd()
+print(plt.style.available)
+#https://matplotlib.org/3.2.1/gallery/style_sheets/style_sheets_reference.html
+plt.style.use('fivethirtyeight')
+plt.tight_layout()
+```
