@@ -54,6 +54,7 @@ ln -s source_file myfile    #Replace source_file with the name of the existing f
 #### SSH
 ssh using public and private keys
 <https://missing.csail.mit.edu/2020/command-line/>
+```bash
 ssh-add -l lists all currently held keys
 ssh-add -D forces ssh-agent to forget all currently held keys
 ssh-add ~/.ssh/newkey_rsa adds the private key ~/.ssh/newkey_rsa to ssh-agent.
@@ -62,8 +63,8 @@ ssh-add -t 3600 ~/.ssh/newkey_rsa adds a new private key with an expiry time, so
 show ciphers
 ssh -Q cipher localhost | paste -d , -s -
 ssh -YC -c aes128-gcm@openssh.com shxi@slc11cbg
-
 ```
+
 #### Network
 ```bash
 dig             #DNS lookup. dig (domain information groper) is a flexible tool for interrogating DNS name servers. It performs DNS lookups and displays the answers that are returned from the name server(s) that were queried.
