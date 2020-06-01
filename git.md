@@ -10,12 +10,10 @@ git ls-files
 git-secret  
 git-crypt  
 
-
 #### git global and local profiles:  
-You can configure an individual repo to use a specific user / email address which overrides the global configuration. From the root of the repo, run
+You can configure an individual repo to use a specific user / email address which overrides the global configuration. From the root of the repo, run  
 git config user.name "Your Name Here"  
-git config user.email your@email.com  
-
+git config user.email your@email.com   
 #### fatal: unable to access "git url" SSL certificate problem: certificate has expired  
 git config --global user.name [username]  
 git config --global user.email [email]  
