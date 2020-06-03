@@ -55,6 +55,13 @@ ln -s source_file myfile    #Replace source_file with the name of the existing f
 ssh using public and private keys
 <https://missing.csail.mit.edu/2020/command-line/>
 ```bash
+To generate a pair you can run ssh-keygen.
+ssh-keygen -o -a 100 -t ed25519 -f ~/.ssh/id_ed25519
+ssh will look into .ssh/authorized_keys to determine which clients it should let in. To copy a public key over you can use:
+cat .ssh/id_ed25519.pub | ssh foobar@remote 'cat >> ~/.ssh/authorized_keys'
+A simpler solution can be achieved with ssh-copy-id where available:
+ssh-copy-id -i .ssh/id_ed25519.pub foobar@remote
+
 ssh-add -l lists all currently held keys
 ssh-add -D forces ssh-agent to forget all currently held keys
 ssh-add ~/.ssh/newkey_rsa adds the private key ~/.ssh/newkey_rsa to ssh-agent.
