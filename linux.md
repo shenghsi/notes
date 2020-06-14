@@ -1,12 +1,15 @@
-#### Shell
-execute multiple commands in one line  
+### Shell
+#### Prompts
+csh/zsh: <http://www.nparikh.org/unix/prompt.php>
+
+#### execute multiple commands in one line  
 ```bash
 A; B    # Run A and then B, regardless of success of A
 A && B  # Run B if and only if A succeeded
 A || B  # Run B if and only if A failed
 A &     # Run A in background.
 ```
-
+#### some commands
 ```bash
 du -sh */     # Show directory sizes
 
@@ -33,7 +36,7 @@ alias QD="echo $PWD"
 
 --            # double dash "--" means "end of command line flags" i.e. it tells the preceding command not to try to parse what comes after command line options.
 ```
-##### csh
+#### csh
 ```
 !! Repeats the previous command
 !10 Repeat the 10th command from the history
@@ -56,13 +59,13 @@ alias QD="echo $PWD"
 !:0 the command itself
 ```
 
-#### Symbolic link
+### Symbolic link
 ln -s source_file myfile    #Replace source_file with the name of the existing file for which you want to create the symbolic link (this file can be any existing file or directory across the file systems). Replace myfile with the name of the symbolic link.
 
-#### SSH
+### SSH
 ssh using public and private keys <https://missing.csail.mit.edu/2020/command-line/>  
 To generate a pair you can run ssh-keygen
-```bash
+```
 ssh-keygen -o -a 100 -t ed25519 -f ~/.ssh/id_ed25519
 ```   
 ssh will look into .ssh/authorized_keys to determine which clients it should let in. To copy a public key over you can use:
@@ -95,13 +98,13 @@ ssh -Q cipher localhost | paste -d , -s -
 ssh -YC -c aes128-gcm@openssh.com shxi@slc11cbg
 ```
 
-#### Network
+### Network
 ```bash
 dig             #DNS lookup. dig (domain information groper) is a flexible tool for interrogating DNS name servers. It performs DNS lookups and displays the answers that are returned from the name server(s) that were queried.
 
 netstat         #show network status. The netstat command symbolically displays the contents of various network-related data structures.
 ```
-#### VNC
+### VNC
 ```
 Problem: unable to copy to vnc server
 Solution: kill the klipper process. May need run vncconfig&
@@ -109,7 +112,18 @@ Solution: kill the klipper process. May need run vncconfig&
 uncheck pass special keys directly to VNC server to use CMD+Tab to switch between local windows
 ```
 
-#### Meta key
+### Meta key
 <https://www.emacswiki.org/emacs/MetaKeyProblems>
 
 Esc = Meta on Mac
+
+
+### Database
+connect to database
+```
+mysql -u root -p
+```
+back up
+```
+mysqldump -u root -p --all-databases > stock.sql
+```
