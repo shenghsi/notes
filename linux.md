@@ -127,3 +127,30 @@ back up
 ```
 mysqldump -u root -p --all-databases > stock.sql
 ```
+
+### Mac launchctl
+```
+launchctl load ~/Library/LaunchAgents/com.devdaily.scripts.plist
+launchctl unload ~/Library/LaunchAgents/com.devdaily.scripts.plist
+```
+To start right away for debug
+```
+launchctl start ~/Library/LaunchAgents/com.devdaily.scripts.plist
+launchctl stop ~/Library/LaunchAgents/com.devdaily.scripts.plist
+```
+You typically want to use launchctl load -w and launchctl unload -w.
+start and stop are usually reserved for testing or debugging a job.
+
+launchctl start <label>: Starts the job. This is usually reserved just for testing or debugging a particular job.
+launchctl stop <label>: Stops the job. Opposite of start, and it's possible that the job will immediately restart if the job is configured to stay running.
+
+launchctl remove <label>: Removes the job from launchd, but asynchronously. It will not wait for the job to actually stop before returning, so no error handling on this one.
+
+launchctl load <path>: Loads and starts the job as long as the job is not "disabled."
+launchctl unload <path>: Stops and unloads the job. The job will still restart on the next login/reboot.
+
+launchctl load -w <path>: Loads and starts the job while also marking the job as "not disabled." The job will restart on the next login/reboot.
+launchctl unload -w <path>: Stops and unloads and disables the job. The job will NOT restart on the next login/restart.
+
+
+
