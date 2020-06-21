@@ -127,6 +127,13 @@ back up
 ```
 mysqldump -u root -p --all-databases > stock.sql
 ```
+permissions
+```
+show grants;
+show grants for 'test'@'localhost';
+grant select, create, insert on stock.test to 'test'@'localhost';
+revoke drop on stock.test from 'test'@'localhost';
+```
 
 ### Mac launchctl
 ```
