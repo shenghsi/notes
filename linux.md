@@ -107,7 +107,10 @@ netstat         #show network status. The netstat command symbolically displays 
 ### VNC
 ```
 Problem: unable to copy to vnc server
-Solution: kill the klipper process. May need run vncconfig&
+Solution:
+kill the klipper process. May need run vncconfig&
+enable copy and paste to and from local machine by add to .profile
+vncconfig -nowin&
 
 uncheck pass special keys directly to VNC server to use CMD+Tab to switch between local windows
 ```
